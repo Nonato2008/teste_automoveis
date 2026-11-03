@@ -104,7 +104,7 @@ describe('API de montadoras', () => {
                 })
                 expect(response.status).toBe(500)
         })
-        it.only('Não atualizar uma montadora sem informar o pais novo', async () => {
+        it('Não atualizar uma montadora sem informar o pais novo', async () => {
 
             const montadora = await MontadoraFactory.create('Fiat', 'Itália')
 
